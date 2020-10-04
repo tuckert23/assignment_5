@@ -1,2 +1,8 @@
 # assignment_5
-KNN. Lab
+KNN Lab
+
+# Authors:
+Taylor Tucker and 
+
+## Model
+

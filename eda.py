@@ -12,13 +12,8 @@ columns = ["id", "diagnosis_result", "radius", "texture", "perimeter", "area", "
 df.columns = columns
 
 
-i = 0
-for result in df["diagnosis_result"]:
-    if result == "M":
-        df.diagnosis_result.iloc[i] = 1
-    else:
-        df.diagnosis_result.iloc[i] = 0
-    i += 1
+df.diagnosis_result = df.diagnosis_result.replace("M", 1)
+df.diagnosis_result = df.diagnosis_result.replace("B", 0)
 
 # creating a scatter plot matrix
 scatterplotmatrix(df[columns].values, figsize=(30, 30), names=columns, alpha=0.8)

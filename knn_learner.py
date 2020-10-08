@@ -1,3 +1,9 @@
+"""
+Getting ideas together about KNN
+
+Author: Taylor Tucker
+"""
+
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 import numpy as np

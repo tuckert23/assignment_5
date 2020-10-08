@@ -2,7 +2,7 @@
 KNN Lab
 
 # Authors:
-Taylor Tucker and 
+Taylor Tucker and Jeff Bradley
 
 ## Model
 

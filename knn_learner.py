@@ -13,13 +13,15 @@ columns = ["id", "diagnosis_result", "radius", "texture", "perimeter", "area", "
 df.columns = columns
 
 # changing result M and B to 1 and 0 respectively
-i = 0
+df.diagnosis_result = df.diagnosis_result.replace("M", 1)
+df.diagnosis_result = df.diagnosis_result.replace("B", 0)
+"""i = 0
 for result in df["diagnosis_result"]:
     if result == "M":
         df.diagnosis_result.iloc[i] = 1
     else:
         df.diagnosis_result.iloc[i] = 0
-    i += 1
+    i += 1"""
     
 # dont need the ID column!
 df.drop("id", inplace=True, axis=1)
